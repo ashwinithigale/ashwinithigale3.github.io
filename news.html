@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Blog--Fascino Body Care</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Colors CSS -->
+    <link rel="stylesheet" href="css/colors.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <![endif]-->
+<style>
+   .pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+} 
+
+* {box-sizing: border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background-image: url("images/grey.jpg");
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+nav{
+	display: flex;
+	padding: 1% 6%;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+}
+
+
+
+
+
+
+
+.nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+ position: relative;
+}
+.nav-links ul li select{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+ position: relative;
+}
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+}
+.nav-links ul li a select{
+	color:white;
+	
+	font-size: 20px;
+	background-color: black;
+}
+.all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: white;
+}
+
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+
+.browser {
+  background: white;
+}
+
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+</style>
+</head>
+<body class="barber_version">
+    <nav>
+        <a href="Homebs.html"><img src="images/ff.png" width="80%"></a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="equip.html">Equipment</a></li>
+                <li><a href="partner.html">Partner With Us</a></li>
+           
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media</a>
+                
+                <ul class="dropdown-menu">
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="news.html">News</a></li>
+                    </ul>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+                  
+  
+            </ul>
+        </div>
+    </nav>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <a href="#menu-toggle" class="menuopener" id="menu-toggle"><i class="fa fa-bars"></i></a>
+			
+            <div id="home" class="parallax first-section" data-stellar-background-ratio="0.4" style="background-image:url('images/news1.jpg');">
+                <div class="container-fluid">
+                    <div class="row">
+						<div id="full-width">
+							<div class="text-center item">
+								<div class="col-md-8 col-md-offset-2 col-sm-12">
+									<div class="big-tagline text-center">
+										<h2><strong>Our News
+
+                                        </strong><br>
+										</h2>
+										<p class="lead"><a href="index.html" style="color: white;">Home</a>&nbsp;/&nbsp;Blog</p>
+										<a href="appointment.html" class="btn btn-light btn-radius btn-brd grd1 effect-1 butn">APPOINTMENT NOW</a>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div><!-- end section -->
+
+            <section class="section nopad cac text-center">
+                <a href="appointment.html"><h3>Interested in our awesome services? Just drop an appointment form!</h3></a>
+            </section>
+            <div id="barbers" class="section lb">
+                <div class="container-fluid">
+                    <div class="section-title row text-center">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card" style="width: 100%;">
+                                 <a href="hairtransplant.html"><img src="images/hairtrans.png" alt="no photo" style="width:100%;height: 300px;"></a>
+                                    <i class="fa fa-clock-o" style="font-size:24px"></i>&nbsp;&nbsp;19 March, 2021
+                                    &nbsp;&nbsp;  <i class="fa fa-file" style="font-size:24px"></i>&nbsp;&nbsp;Blog
+                                    <a href="hairtransplant.html"><h1 style="color: red;"><strong>Hair Transplant in Hyderabad.</strong></h1></a>
+                                    <p style="color: black;">Your search for the best hair clinic in Hyderabad ends here, at Fascino. Fascino offers the best hair transplant service in the town. Curing your hair of the roots and ensuring you get hair worth the price. Fascino continues the…</p>
+
+                                    <button style='font-size:24px'>Continue &#x2192;</button>
+                                  </div>
+                                  <br>
+                                  <div class="card" style="width: 100%;">
+                                    <a href="weightloss.html"> <img src="images/weight.png" alt="no photo" style="width:100%;height:300px;"></a>
+                                    <i class="fa fa-clock-o" style="font-size:24px"></i>&nbsp;&nbsp;16 March,2021
+                                    &nbsp;&nbsp;  <i class="fa fa-file" style="font-size:24px"></i>&nbsp;&nbsp;Blog
+                                    <a href="weightloss.html">  <h1 style="color: red;"><strong>What is Weight Loss treatment?</strong></h1></a>
+                                    <p style="color: black;">Fascino is well-recognised for being the best slimming centre in Hyderabad. Fascino intends to add wings to your thought of achieving your dream body. We are proudly entitled to being the best slimming centre in Hyderabad. Fascino helps you in…</p>
+
+                                    <button style='font-size:24px'>Continue &#x2192;</button>
+                                  </div>
+                                  <br>
+                                  
+                                <div class="card" style="width: 100%;">
+                                    <a href="causehair.html"> <img src="images/hairloss.jpg" alt="no photo" style="width:100%;height: 300px;"></a>
+                                    <i class="fa fa-clock-o" style="font-size:24px"></i>&nbsp;&nbsp;15 May,2020
+                                    &nbsp;&nbsp;  <i class="fa fa-file" style="font-size:24px"></i>&nbsp;&nbsp;News, Blog
+                                    <a href="causehair.html"> <h1 style="color: red;"><strong>What are the causes for hair loss?</strong></h1></a>
+                                    <p style="color: black;">Hair loss is also known as alopecia. Alopecia is the term that includes both scarring and non-scarring types of hair loss. Different causes for hair loss include changes in hormones, stress as well as genetics, and the use of different…</p>
+
+                                    <button style='font-size:24px'>Continue &#x2192;</button>
+                                  </div>
+                                  <br>
+                                  <div class="card">
+                                    <a href="strechmarks.html"> <img src="images/Strecth.jpg" alt="no photo" style="width:100%;height: 300px;"></a>
+                                    <i class="fa fa-clock-o" style="font-size:24px"></i>&nbsp;&nbsp;12 May,2020
+                                    &nbsp;&nbsp;  <i class="fa fa-file" style="font-size:24px"></i>&nbsp;&nbsp;News, Blog
+                                    <a href="strechmarks.html"><h1 style="color: red;"><strong>How to get reduction of Stretch Marks? – Fascino Body Care</strong></h1></a>
+                                    <p style="color: black;">Stretch marks are also known as striae in medical terms. stretch can be on various parts of the body like thighs, buttocks, back, arms, and also on breasts. Stretch marks are caused due to various reasons and concavity of various…</p>
+                                    <button style='font-size:24px'>Continue &#x2192;</button>
+                                  </div><br>
+                                  <div class="card">
+                                    <a href="warts.html"><img src="images/pimple.jpg" alt="no photo" style="width:100%;height: 300px;"></a>
+                                    <i class="fa fa-clock-o" style="font-size:24px"></i>&nbsp;&nbsp;06 May,2020
+                                    &nbsp;&nbsp;  <i class="fa fa-file" style="font-size:24px"></i>&nbsp;&nbsp;News, Blog
+                                    <a href="warts.html"><h1 style="color: red;"><strong>What are the symptoms, causes, treatments for warts?</strong></h1></a>
+                                    <p style="color: black;">A wart is a small growth that appears on the surface of a person’s skin. They are not cancerous or harmful, but they have an unsightly appearance. The HPV is a type of virus that causes common warts. The virus…</p>
+                                    <button style='font-size:24px'>Continue &#x2192;</button>
+                                  </div><br>
+                                  <div class="card">
+                                    <a href="acnescars.html">  <img src="images/acne.jpg" alt="no photo" style="width:100%;height: 300px;"></a>
+                                    <i class="fa fa-clock-o" style="font-size:24px"></i>&nbsp;&nbsp;27 April,2020
+                                    &nbsp;&nbsp;  <i class="fa fa-file" style="font-size:24px"></i>&nbsp;&nbsp;News, Blog
+                                    <a href="acnescars.html"> <h1 style="color: red;"><strong>What are the signs of Acne Scars?</strong></h1></a>
+                                    <p style="color: black;">Acne is so common that is considered a normal part of teenage years, infrequent tiny red bumps usually appear as one of the first signs of puberty. In acne, multiple factors work together first one is sex hormone levels and…</p>
+                                    <button style='font-size:24px'>Continue &#x2192;</button>
+                                  </div>
+                                  <br>
+                                 
+                                  </div>
+                                  <div class="col-md-4">
+                                  <div class="card">
+                                    <a href="fat.html"><img src="images/fat.jpg" alt="no photo" style="width:100%;height: 243px;"></a>
+                                    <i class="fa fa-clock-o" style="font-size:24px"></i>&nbsp;&nbsp;22 April,2020
+                                    &nbsp;&nbsp;  <i class="fa fa-file" style="font-size:24px"></i>&nbsp;&nbsp;News, Blog
+                                    <a href="fat.html"><h1 style="color: red;"><strong>Reducing Fat Through Laser Lipo Treatment at Fascino Body Care</strong></h1></a>
+                                    <p style="color: black;">Laser Lipo treatment is used to lose inches or rejuvenate your skin in just a twenty minutes session. This treatment is 100 percent pain-free, non-surgical, and non-invasive with no downtime and produces instant and long-lasting results. For inch loss and…</p>
+                                    <button style='font-size:24px'>Continue &#x2192;</button>
+                                  </div><br>
+                                  <div class="card">
+                                    <img src="images/cell.jpg" alt="no photo" style="width:100%;height: 300px;">
+                                    <i class="fa fa-clock-o" style="font-size:24px"></i>&nbsp;&nbsp;03 April,2020
+                                    &nbsp;&nbsp;  <i class="fa fa-file" style="font-size:24px"></i>&nbsp;&nbsp;News, Blog
+                                    <a href="cellulite.html"> <h1 style="color: red;"><strong>MESOTHERAPY TREATMENT FOR CELLULITE</strong></h1>
+                                    <p style="color: black;"> Widespread alteration of the skin texture otherwise referred to as orange peel or mattress aspect is the typical lesion from cellulite. The skin’s texture is irregular, uneven and no longer smooth. It has pitting and eversions that are difficult to…</p>
+                                    <button style='font-size:24px'>Continue &#x2192;</button>
+                                  </div><br>
+                                  <div class="card">
+                                    <img src="images/laser.jpg" alt="no photo" style="width:100%;height: 290px;">
+                                    <i class="fa fa-clock-o" style="font-size:24px"></i>&nbsp;&nbsp;27 March,2020
+                                    &nbsp;&nbsp;  <i class="fa fa-file" style="font-size:24px"></i>&nbsp;&nbsp;News, Blog
+                                    <h1 style="color: red;"><strong>WHITENING SKIN BY USING LASER TREATMENT</strong></h1>
+                                    <p style="color: black;">To get healthy skin there are many options starting from chemical peeling to high-end lasers. We have a much wide range of options for treating the skin safely and effectively, these treatments are 100 percent safe and effective by a…</p>
+                                    <button style='font-size:24px'>Continue &#x2192;</button>
+                                  </div>
+                                  <br>
+                                  <div class="card">
+                                    <img src="images/transplant.jpg" alt="no photo" style="width:100%;height: 250px;">
+                                    <i class="fa fa-clock-o" style="font-size:24px"></i>&nbsp;&nbsp;23 March,2020
+                                    &nbsp;&nbsp;  <i class="fa fa-file" style="font-size:24px"></i>&nbsp;&nbsp;News, Blog
+                                    <h1 style="color: red;"><strong>TREATMENT FOR ANDROGENETIC ALOPECIA USING HAIR TRANSPLANT</strong></h1>
+                                    <p style="color: black;">Androgenetic Alopecia is more commonly known as pattern baldness. Patients will keep an area around the back and sides of their head which is not affected by the balding process this is known as the donor region. When hair is…</p>
+                                    <button style='font-size:24px'>Continue &#x2192;</button>
+                                  </div>
+                                  <br>
+                                  <div class="card">
+                                   
+                                    <i class="fa fa-clock-o" style="font-size:24px"></i>&nbsp;&nbsp;12 February,2020
+                                    &nbsp;&nbsp;  <i class="fa fa-file" style="font-size:24px"></i>&nbsp;&nbsp;News, Blog
+                                    <h1 style="color: red;"><strong>Laser hair Removal Treatment in Hyderabad-Fascinobodycare</strong></h1>
+                                    <p style="color: black;">LASER HAIR REMOVAL: Laser hair removal is an complex visual treatment which is a most popular cosmetic treatment that is removal of hair on the small area of upper lip, Two legs, back and shoulders. Laser hair removal is generally…</p>
+                                    <button style='font-size:24px'>Continue &#x2192;</button>
+                                  </div><br><br><br><br><br><br><br><br><br><br><br><br>
+                                  <div class="card">
+                                    <img src="images/de.jpg" alt="no photo" style="width:100%;height: 210px;">
+                                    <i class="fa fa-clock-o" style="font-size:24px"></i>&nbsp;&nbsp;18 March,2020
+                                    &nbsp;&nbsp;  <i class="fa fa-file" style="font-size:24px"></i>&nbsp;&nbsp;News, Blog
+                                    <h1 style="color: red;"><strong>Dr Nanda Kishore – Famous Bariatric Surgeon</strong></h1>
+                                    <p style="color: black;">WHY FASICNO? Weight loss at Fascino Body care which includes a nourishment plan and exercise program intended for every individual patient. Our program includes a group of specialists, including a bariatrician, dietitian, practice physiologist and therapist. Weight reduction requires some…</p>
+                                    <button style='font-size:24px'>Continue &#x2192;</button>
+                                  </div>   
+                            </div>
+
+                            <div class="col-md-4">
+
+                              <article class="all-browsers">
+                                  <h1 style="text-align:left;color: red;"><u>Recent Post</u></h1>
+                                  <article class="browser">
+                                  <a href="hairtransplant.html"> <p style="text-align: left;">Hair Transplant in Hyderabad.
+                                      </p></a>
+                                  </article><hr style="border-width:0;color:gray;background-color:gray;width: 100%;">
+                                 
+                                  <article class="browser">
+                                    <a href="weightloss.html"> <p style="text-align:left;"> What is Weight Loss treatment?</p></a>
+                                      
+                                  </article><hr style="border-width:0;color:gray;background-color:gray;width: 100%;">
+                                  <article class="browser">
+                                    <a href="causehair.html">    <p style="text-align: left;"> What are the causes for hair loss?</p></a>
+                                      
+                                  </article><hr style="border-width:0;color:gray;background-color:gray;width: 100%;">
+
+                                  <article class="browser">
+                                     
+                                    <a href="strechmarks.html"> <p style="text-align: left;">   How to get reduction of Stretch Marks? – Fascino Body Care</p></a>
+                                      
+                                  </article><hr style="border-width:0;color:gray;background-color:gray;width: 100%;">
+                                  <article class="browser">
+                                     
+                                    <a href="warts.html"> <p style="text-align:left;">  What are the symptoms, causes, treatments for warts?</p></a>
+                                      
+                                  </article>
+                                 
+                                </article>
+                                
+                                <br><br><br>
+
+                                <article class="all-browsers">
+                                  <h1 style="text-align:left;color:red;"><u>Archives</u></h1>
+                                  <article class="browser">
+                                    <a href="hairtransplant.html">  <p style="text-align: left;">March 2021
+                                      </p> </a>
+                                                                      </article><hr style="border-width:0;color:gray;background-color:gray;width: 100%;">
+                                  <article class="browser">
+                                    <a href=".html">  <p style="text-align:left;">May 2020</p></a>
+                                      
+                                  </article><hr style="border-width:0;color:gray;background-color:gray;width: 100%;">
+                                  <article class="browser">
+                                    <a href="hairtransplant.html">  <p style="text-align: left;"> April 2020</p></a>
+                                      
+                                  </article><hr style="border-width:0;color:gray;background-color:gray;width: 100%;">
+
+                                  <article class="browser">
+                                     
+                                    <a href="hairtransplant.html"> <p style="text-align: left;">March 2020</p></a>
+                                      
+                                  </article><hr style="border-width:0;color:gray;background-color:gray;width: 100%;">
+                                  <article class="browser">
+                                     
+                                    <a href="hairtransplant.html">  <p style="text-align:left;">February 2020</p></a>
+                                      
+                                  </article><hr style="border-width:0;color:gray;background-color:gray;width: 100%;">
+
+                                  <article class="browser">
+                                     
+                                    <a href="hairtransplant.html"> <p style="text-align:left;">January 2020</p></a>
+                                        
+                                    </article><hr style="border-width:0;color:gray;background-color:gray;width: 100%;">
+                                 
+                                    <article class="browser">
+                                     
+                                      <a href="hairtransplant.html">  <p style="text-align:left;">November 2019</p></a>
+                                        
+                                    </article><hr style="border-width:0;color:gray;background-color:gray;width: 100%;">
+                                 
+                                    <article class="browser">
+                                     
+                                      <a href="hairtransplant.html">  <p style="text-align:left;">August 2019</p></a>
+                                        
+                                    </article><hr style="border-width:0;color:gray;background-color:gray;width: 100%;">
+                                 
+                                    <article class="browser">
+                                     
+                                      <a href="hairtransplant.html">   <p style="text-align:left;">June 2019</p></a>
+                                        
+                                    </article>
+                              
+                          </div>
+                      </div>
+                     </div>
+                     </div>
+                     
+                  
+                     
+              </div><!-- end container -->
+          </div><!-- end section -->
+          <br>
+          <center>
+                      <div class="pagination">
+                      <a href="news.html">&laquo;</a>
+                      <a href="news.html">1</a>
+                      <a href="blog1.html">2</a>
+                      <a href="blog1.html">&raquo;</a>
+                    </div>
+                    </center>
+          
+
+            
+            <div class="apple-touch-icon" style="background-color:black;color:white;">
+              <div class="row">
+                  <div class="col-md-4">
+                      <br><ol style="text-align: center;">
+                      <p>
+                      <span style="color: red;" class="glyphicon glyphicon-map-marker" aria-hidden="true"></span><br>  
+                       &nbsp; &nbsp;<b>3-5-908, Pooja Manhore Arcade,<br/>&nbsp;&nbsp;&nbsp; Himayathnagar, Hyderabad</b> </p><br>
+                      
+                      
+               
+                  </div>
+                  <div class="col-md-4">
+                      <ol style="text-align: center;"><br>
+                   <p style="color: white;"> <span style="color: red;" class="glyphicon glyphicon-phone-alt " aria-hidden="true"></span><br> 
+                       &nbsp;&nbsp;<b>Telangana: +91-97005 00083<br/>  &nbsp; Tamil Nadu/Kerala : +91-97005 00083<br/> &nbsp; &nbsp; &nbsp; Andhra Pradesh : +91-8881144422 </b> 
+                       </p><br>
+               </>
+                  </div>
+                  <div class="col-md-4">
+                     <br> <ol style="text-align: center; "><p style="color: white; "> <span style="color: red; " class="glyphicon glyphicon-envelope" aria-hidden="true"></span><br> 
+                           &nbsp;&nbsp;<b>info@fascinobodycare.com  </b>
+                           </p>
+                      
+                      
+                  </div>
+              </div>
+              <br>
+              <div class="row">
+               <div class="col-md-6">
+                   <p class="footer-company-name">&nbsp; &nbsp;&nbsp; &nbsp;<b>© 2019 Fascino Body Care. All Rights Reserved.</b></p>
+               </div>
+               <div class="col-md-6"><p style="text-align: right;">
+          
+          <a class="fa-icon fa-icon-2x" href="https://www.facebook.com/fascinobodycare" title="">
+          <i class="fa fa-facebook" style="color: red;"></i>
+          </a>&nbsp;&nbsp;&nbsp;&nbsp;
+          
+          <a class="fa-icon fa-icon-2x" href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F30259840%2Fadmin" title="">
+          <i class="fa fa-linkedin" style="color: red;"></i>
+          </a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="fa-icon fa-icon-2x" href="https://instagram.com/fascinobody/" title="">
+          <i class="fa fa-instagram" style="color: red;"></i>
+          </a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="fa-icon fa-icon-2x" href="https://twitter.com/BodyFascino" title="">
+          <i class="fa fa-twitter" style="color: red;"></i>
+          </a> &nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="fa-icon fa-icon-2x" href="https://youtube.com/watch?v=3KVYsAMTF7A" title="">
+          <i class="fa fa-youtube" style="color: red;"></i>&nbsp; &nbsp;&nbsp; &nbsp;
+          </a>
+          </p></div>
+               <br><br>
+          
+              </div>
+          </div>    
+          
+                       </div>
+          
+                    
+               </div><!-- end container -->
+           </div><!-- end copyrights -->
+          </div>
+          </div><!-- end wrapper -->
+          
+                    
+          
+                      
+              <!-- ALL JS FILES -->
+              <script src="all.js"></script>
+            <script src="responsive-tabs.js"></script>
+              <!-- ALL PLUGINS -->
+              <script src="custom.js"></script>
+          
+              <!-- Menu Toggle Script -->
+              <script>
+              (function($) {
+                  "use strict";
+                  $("#menu-toggle").click(function(e) {
+                      e.preventDefault();
+                      $("#wrapper").toggleClass("toggled");
+                  });
+                  smoothScroll.init({
+                      selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+                      selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
+                      speed: 500, // Integer. How fast to complete the scroll in milliseconds
+                      easing: 'easeInOutCubic', // Easing pattern to use
+                      offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+                      callback: function ( anchor, toggle ) {} // Function to run after scrolling
+                  });
+              })(jQuery);
+              </script>
+          
+          </body>
+          </html>
